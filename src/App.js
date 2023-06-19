@@ -64,11 +64,13 @@ function App() {
 						style={{
 							display: 'flex',
 							justifyContent: 'center',
-							marginTop: '2rem',
-							cursor: 'pointer'
+							marginTop: '2rem'
 						}}
 					>
 						<button
+							style={{
+								cursor: 'pointer'
+							}}
 							className='btn'
 							onClick={handleLoadMore}
 							disabled={!hasNextPage || loadMoreLoading}
